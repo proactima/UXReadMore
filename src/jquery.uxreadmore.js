@@ -50,7 +50,7 @@
     }
 
     function extractOverflowText(target) {
-        var contents, hiddenSpan;
+        var contents, hiddenSpan, readLink;
 
         contents = $(target).text();
         hiddenSpan = $('<span></span>');
@@ -58,6 +58,11 @@
         hiddenSpan.text(contents.substring(settings.ellipsisPoint - 3));
         hiddenSpan.addClass('hiddenText');
 
+        readLink = $('<a></a>');
+        readLink.attr('href', '#');
+        //readLink.
+
+        $(target).append(readLink);
         $(target).append(hiddenSpan);
     }
 

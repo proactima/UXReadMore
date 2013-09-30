@@ -40,7 +40,10 @@ test("Absolute - Given text greater than 200 then read more should be present", 
 
     var targetTextDiv = $(targetId).find('div');
     equal($(targetTextDiv).data('cutOff'), mainLength, "CutOff value was not set!")
-    equal($(targetTextDiv).text().substring(mainLength - 3, mainLength), '...', "Ellipsis not found!"); 
+    equal($(targetTextDiv).text().substring(mainLength - 3, mainLength), '...', "Ellipsis not found!");
+    var readMoreLink = $(targetTextDiv).find('a');
+    equal(readMoreLink.length, 1, "Read more link not found!");
+    equal(readMoreLink.attr('href'), '#', "Read more link has wrong target");
     equal($(targetId).find('.hiddenText').length, 1, "Overflow text was not found!");
 })
 
