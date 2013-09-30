@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B486640-E3EE-4F47-9D4A-5AE56A6D9F33}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8EB92A3-4B72-4520-B47A-CD3DC037882B}"
+	ProjectSection(SolutionItems) = preProject
+		src\jquery.uxreadmore.js = src\jquery.uxreadmore.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A9A9B376-84AB-4D32-8FB3-D17164319337}"
+	ProjectSection(SolutionItems) = preProject
+		tests\jquery-1.10.2.min.js = tests\jquery-1.10.2.min.js
+		tests\jquery.uxreadmore.tests.js = tests\jquery.uxreadmore.tests.js
+		tests\qunit-1.12.0.js = tests\qunit-1.12.0.js
+		tests\qunit.css = tests\qunit.css
+		tests\tests.html = tests\tests.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8EB92A3-4B72-4520-B47A-CD3DC037882B} = {4B486640-E3EE-4F47-9D4A-5AE56A6D9F33}
+		{A9A9B376-84AB-4D32-8FB3-D17164319337} = {4B486640-E3EE-4F47-9D4A-5AE56A6D9F33}
+	EndGlobalSection
+EndGlobal
